@@ -25,14 +25,12 @@ fontsize = 20
 xlab = f'Quantidade de primos no intervalo = {len(primos) - 1}'
 ylab = 'Números verificados'
 
-### Eixo x - numero de passos ###
-ax.set_xlabel(xlab, fontsize = fontsize)
-
-### Eixo y - valores intermediários ###
-intervalo = np.array(primos)
-
+### Eixo x - Quantidade de primos no intervalo ###
+### Eixo y - Números verificados ###
 ### plotar dados ###
+intervalo = np.array(primos)
 ax.plot(intervalo, marker = '.', ls = '', ms = 7, color = 'r')
+ax.set_xlabel(xlab, fontsize = fontsize)
 ax.set_ylabel(ylab, fontsize = fontsize)
 ax.tick_params('y', )
 ax.grid(color = 'black')
